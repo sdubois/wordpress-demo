@@ -121,7 +121,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
     $_SERVER['HTTPS'] = 'on';
 }
 
-$env_config = __DIR__ . '/environments/' . WP_ENV . '.php';
+$env_config = __DIR__ . '/environments/' . NODE_ENV . '.php';
 
 if (file_exists($env_config)) {
     require_once $env_config;
